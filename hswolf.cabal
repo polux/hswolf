@@ -1,0 +1,36 @@
+name:                hswolf
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/hswolf#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2019 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable hswolf
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  other-modules:       Draw,
+                       Textures
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       sdl2,
+                       sdl2-gfx,
+                       sdl2-ttf,
+                       linear,
+                       array,
+                       microlens,
+                       containers,
+                       random,
+                       pretty-show,
+                       vector,
+                       JuicyPixels,
+                       JuicyPixels-extra,
+                       text
+  ghc-options: -O2
